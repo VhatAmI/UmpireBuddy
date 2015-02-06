@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <TextView android:text="@string/ballcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/Ball_button"
+        android:layout_toRightOf="@+id/Strike_button"
+        android:layout_toEndOf="@+id/Strike_button" />
+
+    <TextView android:text="@string/strikecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/Strike_button"
+        android:layout_alignLeft="@+id/Strike_button"
+        android:layout_alignStart="@+id/Strike_button" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="OUTS: "
+        android:paddingTop ="275dp"
+        android:paddingLeft="260dp"
+        android:id="@+id/OUTDisplay"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Strike_button"
+        android:id="@+id/Strike_button"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Ball_button"
+        android:id="@+id/Ball_button"
+        android:layout_alignTop="@+id/Strike_button"
+        android:layout_toRightOf="@+id/Strike_button"
+        android:layout_toEndOf="@+id/Strike_button" />
+
+</RelativeLayout>
